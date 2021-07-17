@@ -37,7 +37,7 @@ export class registrationPoint1626543306346 implements MigrationInterface {
 					name: 'responsible_name',//nome da pessoa ou da orng
 					type: 'varchar'
 				}, {
-					name: 'type', // se é um ponto de vacina ou local de distribuição
+					name: 'typePoint', // se é um ponto de vacina ou local de distribuição
 					type: 'varchar'
 				}
 			]

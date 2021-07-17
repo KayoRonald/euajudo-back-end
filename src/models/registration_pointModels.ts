@@ -10,7 +10,7 @@ export default class RegistionPoint {
   namePoint: string;
 
   @Column('')
-  latitude: string;
+  latitude: number;
 
   @Column('')
   longitude: number;
@@ -25,5 +25,5 @@ export default class RegistionPoint {
   responsible_name: string;
 
   @Column('')
-  type: string;
+  typePoint: string;
 }
