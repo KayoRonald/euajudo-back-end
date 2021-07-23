@@ -5,7 +5,7 @@
       "./src/database/migrations/*.ts"
   ],
   "entities":[
-      "./src/models/*.ts"
+      "./src/modules/*/typeorm/models/*.ts"
   ],
   "cli":{
       "migrationsDir": "./src/database/migrations"
