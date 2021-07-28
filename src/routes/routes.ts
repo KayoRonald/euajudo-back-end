@@ -1,7 +1,9 @@
 import { Router } from 'express';
-import RegistrationPointControllers from '../controllers/RegistrationPointControllers';
+
+import registionRoutes from '../modules/Registration/routes/Register.routes';
+
 const routes = Router();
 
-// routes.get('/orphanages', RegistrationPointControllers.index);
-// routes.get('/orphanages:id', RegistrationPointControllers.show);
+routes.use('/registionPoint', registionRoutes);
+
 export default routes;
