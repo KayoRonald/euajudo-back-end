@@ -1,4 +1,5 @@
 import { getCustomRepository } from 'typeorm';
+import AppError from '../../../errors/AppError';
 
 import RegistionPoint from '../typeorm/models/registration_pointModels';
 import { RegistionPointRepository } from '../typeorm/repositories/RegistrationRepository';
@@ -36,6 +37,10 @@ export default class RegistrationPointService {
       typePoint,
       whatsapp,
     });
+
+    if (create.latitude && create.longitude) {
+      throw new AppError(`Ponto de registro ${create.namePoint} já cadastrado`);
+    }
 
     return await registionPointRepository.save(create);
   }
