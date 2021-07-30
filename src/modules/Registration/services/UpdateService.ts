@@ -1,10 +1,10 @@
 import { getCustomRepository } from 'typeorm';
 import AppError from '../../../errors/AppError';
-
 import RegistionPoint from '../typeorm/models/registration_pointModels';
 import { RegistionPointRepository } from '../typeorm/repositories/RegistrationRepository';
 
 interface IRequest {
+  id: number;
   namePoint: string;
   latitude: number;
   longitude: number;
@@ -14,34 +14,35 @@ interface IRequest {
   typePoint: string;
 }
 
-export default class RegistrationPointService {
+export default class UpdateServie {
   public async execute({
-    responsibleName,
+    id,
     about,
     latitude,
     longitude,
     namePoint,
+    responsibleName,
     typePoint,
     whatsapp,
   }: IRequest): Promise<RegistionPoint> {
-    const registionPointRepository = getCustomRepository(
+    const registrationRepository = getCustomRepository(
       RegistionPointRepository,
     );
 
-    const create = await registionPointRepository.create({
-      about,
-      latitude,
-      longitude,
-      namePoint,
-      responsibleName,
-      typePoint,
-      whatsapp,
-    });
+    const point = await registrationRepository.findOne({ where: { id: id } });
 
-    if (create.latitude && create.longitude) {
-      throw new AppError(`Ponto de registro ${create.namePoint} já cadastrado`);
+    if (!point) {
+      throw new AppError('Ponto de registro não encontrado');
     }
 
-    return await registionPointRepository.save(create);
+    point.about = about;
+    point.latitude = latitude;
+    point.longitude = longitude;
+    point.namePoint = namePoint;
+    point.responsibleName = responsibleName;
+    point.typePoint = typePoint;
+    point.whatsapp = whatsapp;
+
+    return await registrationRepository.save(point);
   }
 }
