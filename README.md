@@ -134,21 +134,6 @@ Ao inicia o projeto abrirar a rota [localhost:8080](http://localhost:8080/)
 
 <br/>
 
-<br/>
-
-## 📝 **Licença**
-Esse projeto está sobre a licença MIT. Veja o arquivo **[LICENSE](LICENSE)** para mais detalhes.
-
-<br/>
-
-<h4 align="center">
-    <b>Realizado como trablho no <a href="https://www.ifpb.edu.br/picui">IFPB Campus Picuí. 💜</a></b>
-</h4>
-
-<p align="center">
-    <img src="https://miro.medium.com/max/1200/1*A1bEPfQeGGKp98z1cdctVA.png" alt="Eu Ajudo" width="450"/>
-</p>
-
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -172,3 +157,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## 📝 **Licença**
+Esse projeto está sobre a licença MIT. Veja o arquivo **[LICENSE](LICENSE)** para mais detalhes.
+
+<h4 align="center">
+    <b>Realizado como trablho no <a href="https://www.ifpb.edu.br/picui">IFPB Campus Picuí. 💜</a></b>
+</h4>
