@@ -1,4 +1,7 @@
 <h1 align="center">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
     <strong>Eu Ajudo 💜</strong>
 </h1>
 
@@ -148,3 +151,23 @@ Esse projeto está sobre a licença MIT. Veja o arquivo **[LICENSE](LICENSE)** p
 <p align="center">
     <img src="https://miro.medium.com/max/1200/1*A1bEPfQeGGKp98z1cdctVA.png" alt="Eu Ajudo" width="450"/>
 </p>
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://diqxy1@gmail.com"><img src="https://avatars.githubusercontent.com/u/43462352?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eduardo Pinheiro</b></sub></a><br /><a href="#maintenance-Diqxy1" title="Maintenance">🚧</a> <a href="https://github.com/KayoRonald/euajudo-back-end/commits?author=Diqxy1" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
