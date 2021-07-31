@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Diqxy1",
+      "name": "Eduardo Pinheiro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43462352?v=4",
+      "profile": "http://diqxy1@gmail.com",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "euajudo-back-end",
+  "projectOwner": "KayoRonald",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
