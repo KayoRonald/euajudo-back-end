@@ -1,7 +1,7 @@
 import { getCustomRepository } from 'typeorm';
 
-import RegistionPoint from '../typeorm/models/registration_pointModels';
-import { RegistionPointRepository } from '../typeorm/repositories/RegistrationRepository';
+import RegistionPoint from '@modules/Registration/typeorm/models/RegistrationPoint';
+import { RegistionPointRepository } from '@modules/Registration/typeorm/repositories/RegistrationRepository';
 
 export default class ListService {
   public async execute(): Promise<RegistionPoint[]> {

@@ -1,7 +1,8 @@
 import { getCustomRepository } from 'typeorm';
-import AppError from '../../../errors/AppError';
-import RegistionPoint from '../typeorm/models/registration_pointModels';
-import { RegistionPointRepository } from '../typeorm/repositories/RegistrationRepository';
+
+import AppError from '@shared/errors/AppError';
+import RegistionPoint from '@modules/Registration/typeorm/models/RegistrationPoint';
+import { RegistionPointRepository } from '@modules/Registration/typeorm/repositories/RegistrationRepository';
 
 interface IRequest {
   id: number;
