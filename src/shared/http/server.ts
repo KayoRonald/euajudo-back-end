@@ -26,6 +26,7 @@ app.use(
       });
     }
 
+    // eslint-disable-next-line
     console.error(error);
 
     return response.status(500).json({
