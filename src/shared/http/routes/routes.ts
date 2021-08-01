@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import registionRoutes from '../modules/Registration/routes/Register.routes';
+import registionRoutes from '@modules/Registration/routes/Register.routes';
 
 const routes = Router();
 

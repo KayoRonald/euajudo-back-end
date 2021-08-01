@@ -1,12 +1,14 @@
 // External Imports
+import 'reflect-metadata';
+import 'dotenv/config';
 import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import 'express-async-errors';
 
 // Internal Imports
-import './database/connection';
 import routes from './routes/routes';
-import AppError from './errors/AppError';
+import AppError from '@shared/errors/AppError';
+import '@shared/typeorm';
 
 const app = express();
 
@@ -24,6 +26,9 @@ app.use(
       });
     }
 
+    // eslint-disable-next-line
+    console.error(error);
+
     return response.status(500).json({
       status: 'error',
       message: 'Internal server error',
@@ -31,6 +36,9 @@ app.use(
   },
 );
 
-app.listen(8080, () => {
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => {
+  // eslint-disable-next-line
   console.log('🔥 Server started http://localhost:8080');
 });

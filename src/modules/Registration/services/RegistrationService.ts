@@ -1,8 +1,8 @@
 import { getCustomRepository } from 'typeorm';
-import AppError from '../../../errors/AppError';
 
-import RegistionPoint from '../typeorm/models/registration_pointModels';
-import { RegistionPointRepository } from '../typeorm/repositories/RegistrationRepository';
+import AppError from '@shared/errors/AppError';
+import RegistionPoint from '@modules/Registration/typeorm/models/RegistrationPoint';
+import { RegistionPointRepository } from '@modules/Registration/typeorm/repositories/RegistrationRepository';
 
 interface IRequest {
   namePoint: string;
@@ -38,8 +38,14 @@ export default class RegistrationPointService {
       whatsapp,
     });
 
-    if (create.latitude && create.longitude) {
-      throw new AppError(`Ponto de registro ${create.namePoint} já cadastrado`);
+    const findPoins = await registionPointRepository.find();
+
+    for (let i = 0; i < findPoins.length; i++) {
+      if (findPoins[i].latitude && findPoins[i].longitude) {
+        throw new AppError(
+          `Ponto de registro ${create.namePoint} já cadastrado`,
+        );
+      }
     }
 
     return await registionPointRepository.save(create);
