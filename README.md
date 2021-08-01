@@ -22,41 +22,6 @@ Realizado através do projeto do `Trabalho de conclusão de curso (TCC)` pelo **
   O projeto 'Eu ajudo' é uma aplicação Web realizada para que os usuários colabore com sua comunidade.
 </p>
 
-<h2>🎓 <strong>Membros</strong></h2>
-<table align="center">
-  <tr>
-    <td align="center">
-      <a href="https://euajudo-app.vercel.app/">
-        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/7308958?v=4" width="100px;" alt="Eu Ajudo"/>
-        <br />
-        <sub><b>Rômulo Costa</b>
-        </sub></a><br />
-      <a href="https://euajudo-app.vercel.app/" title="Eu Ajudo">Orientador</a>
-    </td>
-       <td align="center">
-      <a href="https://euajudo-app.vercel.app/">
-        <img style="border-radius: 13px;" src="https://avatars.githubusercontent.com/u/56506788?v=4" width="100px;" alt="Eu Ajudo"/>
-        <br />
-        <sub><b>Kayo Ronald</b>
-        </sub></a><br />
-      <a href="https://euajudo-app.vercel.app/" title="Eu Ajudo">Front-end</a>
-    </td>
-     <td align="center">
-      <a href="https://euajudo-app.vercel.app/">
-        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/62349504?v=4" width="100px;" alt="Eu Ajudo"/>
-        <br />
-        <sub><b>Gluaber</b>
-        </sub></a><br />
-      <a href="https://euajudo-app.vercel.app/" title="Eu Ajudo">Back-end</a>
-    </td>
-  </tr>
-</table>
-<blockquote align="center">
-  <p>Eu Ajudo, venha participar você também!</p>
-</blockquote>
-<br/>
-<hr/>
-
 ## 🤔 **Como contribuir?**
 
 - Faça um `fork` desse repositório;
@@ -133,6 +98,40 @@ npm dev
 Ao inicia o projeto abrirar a rota [localhost:8080](http://localhost:8080/)
 
 <br/>
+<h2>🎓 <strong>Membros</strong></h2>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://euajudo-app.vercel.app/">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/7308958?v=4" width="100px;" alt="Eu Ajudo"/>
+        <br />
+        <sub><b>Rômulo Costa</b>
+        </sub></a><br />
+      <a href="https://euajudo-app.vercel.app/" title="Eu Ajudo">Orientador</a>
+    </td>
+       <td align="center">
+      <a href="https://euajudo-app.vercel.app/">
+        <img style="border-radius: 13px;" src="https://avatars.githubusercontent.com/u/56506788?v=4" width="100px;" alt="Eu Ajudo"/>
+        <br />
+        <sub><b>Kayo Ronald</b>
+        </sub></a><br />
+      <a href="https://euajudo-app.vercel.app/" title="Eu Ajudo">Front-end</a>
+    </td>
+     <td align="center">
+      <a href="https://euajudo-app.vercel.app/">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/62349504?v=4" width="100px;" alt="Eu Ajudo"/>
+        <br />
+        <sub><b>Gluaber</b>
+        </sub></a><br />
+      <a href="https://euajudo-app.vercel.app/" title="Eu Ajudo">Back-end</a>
+    </td>
+  </tr>
+</table>
+<blockquote align="center">
+  <p>Eu Ajudo, venha participar você também!</p>
+</blockquote>
+<br/>
+<hr/>
 
 ## Contributors ✨
 
