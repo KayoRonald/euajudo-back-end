@@ -16,12 +16,6 @@ Temos como propósito que apropria comunidade se ajude entre si, assim colaboran
 
 Realizado através do projeto do `Trabalho de conclusão de curso (TCC)` pelo **Instituto Federal de Educação Ciência e Tecnologia da Paraíba Campus Picuí (IFPB)**. 🎓
 
-## **About**
-<p>
-  App criado para intermediar pedidos durante isolamento social. 
-  O projeto 'Eu ajudo' é uma aplicação Web realizada para que os usuários colabore com sua comunidade.
-</p>
-
 ## 🤔 **Como contribuir?**
 
 - Faça um `fork` desse repositório;
@@ -52,25 +46,12 @@ Esse projeto foi feito utilizando as seguintes tecnologias:
 **2. Executando a Aplicação:**
 
 No diretório do projeto, você pode executar:
+
 ```bash
   cd euajudo-back-end
 ```
 
 **3. Como instalar as dependências**
-
-Caso você queira, podera ser usado o yarn ou npm. 
-
-```bash
-yarn 
-```
-<p align="center">ou</p>
-
-```bash
-npm install
-```
-
-**4. Como rodar o projeto**
-
 <!--ts-->
  **Pré-requisito**
  
@@ -85,6 +66,30 @@ npm install
 </blockquote>
 
 <br/>
+
+Caso você queira, podera ser usado o yarn ou npm. 
+
+```bash
+yarn 
+```
+<p align="center">ou</p>
+
+```bash
+npm install
+```
+
+**4. Como rodar o projeto**
+
+Antes de executar nossa aplicação, é necessário rodar o seguinte comando:
+
+Para saber mais sobre [typeorm migration:run](https://typeorm.io/#/migrations/running-and-reverting-migrations)
+
+```bash
+yarn typeorm migration:run
+```
+
+Ou podem utilizar a nossa URL(https://euajudo-back-end.herokuapp.com/)
+<br />
 
 ```bash
 yarn dev
