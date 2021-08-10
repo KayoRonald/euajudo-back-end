@@ -1,0 +1,12 @@
+tasks:
+  - init: yarn install # runs during prebuild
+    command: yarn dev
+
+ports:
+  - port: 8080
+
+github:
+  prebuilds:
+    master: true
+    pullRequestsFromForks: true
+    addLabel:  prebuilt-in-gitpod
