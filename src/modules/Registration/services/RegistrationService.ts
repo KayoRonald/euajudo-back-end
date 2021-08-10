@@ -1,6 +1,6 @@
 import { getCustomRepository } from 'typeorm';
 
-import AppError from '@shared/errors/AppError';
+// import AppError from '@shared/errors/AppError';
 import RegistionPoint from '@modules/Registration/typeorm/models/RegistrationPoint';
 import { RegistionPointRepository } from '@modules/Registration/typeorm/repositories/RegistrationRepository';
 
@@ -40,13 +40,13 @@ export default class RegistrationPointService {
 
     const findPoins = await registionPointRepository.find();
 
-    for (let i = 0; i < findPoins.length; i++) {
-      if (findPoins[i].latitude && findPoins[i].longitude) {
-        throw new AppError(
-          `Ponto de registro ${create.namePoint} já cadastrado`,
-        );
-      }
-    }
+    // for (let i = 0; i < findPoins.length; i++) {
+    //   if (findPoins[i].latitude && findPoins[i].longitude) {
+    //     throw new AppError(
+    //       `Ponto de registro ${create.namePoint} já cadastrado`,
+    //     );
+    //   }
+    // }
 
     return await registionPointRepository.save(create);
   }
